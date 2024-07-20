@@ -1,0 +1,10 @@
+type Query {
+    dogTricks: [DogTrick]
+    trickById(id: ID!): DogTrick
+}
+
+type DogTrick {
+    id: ID!
+    name: String
+    description: String
+}
